@@ -1,0 +1,6 @@
+Flask
+gunicorn
+cryptography
+reportlab
+qrcode
+pillow
