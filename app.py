@@ -1,13 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return """
-    <h1>🎓 CertiSign Academic</h1>
-    <p>Sistem Sertifikat Digital Mahasiswa</p>
-    """
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
